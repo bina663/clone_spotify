@@ -1,0 +1,149 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    color:#ffff;
+    background-color: #141414;
+    overflow: visible;
+}
+.flex{
+    display: flex;
+}
+header{
+    width:100%;
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1em;
+}
+ul{
+    list-style: none;
+}
+.logo-left{
+    align-items: center;
+    justify-content: space-between;
+    width: 100px;
+}
+.logo-left img{
+    width: 40px;
+    color: #ffff;
+}
+.logo-left h1{
+    font-size: 1.4em;
+    margin-left: 10px;
+}
+nav{
+    width: 400px;
+}
+nav ul{
+    justify-content: center;
+}
+nav ul li{
+    padding: 5px 8px;
+    font-weight: 600;
+    cursor: pointer;
+    line-height: 2px;
+    transition: all 0.5s;
+}
+nav ul li:hover{
+    font-weight: 700;
+    color: #30b42e;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.container .left{
+    padding: 0 50px;
+    width:50%;
+    flex-direction: column;
+    justify-content: center;
+}
+.left section{
+    display: block;
+}
+.title h1{
+    font-size: 3.0em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.left .description{
+    margin: 40px 0;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+.left button{
+    width:300px;
+    padding: 10px 50px;
+    background-color: rgb(39, 39, 133);
+    border:none;
+    font-weight: 800;
+    border-radius: 50px;
+    font-size: 1.2em;
+    transition: background 0.5s;
+}
+.left button:hover{
+    background-color: rgb(23, 23, 131);
+}
+.container .right{
+    width: 50%;
+}
+.circle{
+    position: relative;
+    border: 1px solid gray;
+    border-radius: 50%;
+    box-shadow: 1px 1px 15px #2c2c2c;
+    transition: all 0.5s;
+}
+.top, .center, .bottom{
+    width: 100%;
+    background-color: transparent;
+}
+.top,.bottom{
+    justify-content:start;
+}
+.center{
+    justify-content: center;
+}
+.circle img{
+    background-color: transparent;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 50%;
+}
+.first{
+    background-color: rgb(171, 51, 51);
+    width:200px;
+    height: 200px;
+}
+.first img{
+    width:200px;
+    bottom: -4px;
+}
+.center .circle{
+    width:350px;
+    height: 350px;
+    background-color: blueviolet;
+    left: 60px;
+    bottom:50px;
+}
+.center img{
+    width: 400px;
+    left:50%;
+    transform: translateX(-50%);
+    bottom:0.8px;
+
+}
+.bottom .third{
+    width: 350px;
+    height: 350px;
+    background-color: rgb(68, 99, 192);
+}
+.bottom img{
+    width: 350px;
+}
+.circle:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 20px #404040;
+}
